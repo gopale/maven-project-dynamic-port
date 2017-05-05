@@ -10,7 +10,8 @@ import org.mule.tck.junit4.rule.DynamicPort;
 
 public class HelloMavenTest extends FunctionalTestCase {
 
-	@Rule DynamicPort dynamicPort = new DynamicPort("http.port");
+	@Rule 
+	public DynamicPort dynamicPort = new DynamicPort("http.port");
 	
     @Test
     public void mavenFlowReturnsHelloMaven() throws Exception {
